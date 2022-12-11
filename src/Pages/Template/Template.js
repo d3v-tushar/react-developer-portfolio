@@ -1,14 +1,12 @@
 import React from 'react';
 import Hero from '../Hero/Hero';
 import Contact from './Contact';
-import Header from './Header';
 import Projects from './Projects';
 import Statistics from './Statistics';
 
 const Template = () => {
     return (
         <div className="space-y-12 dark:bg-gray-800 dark:text-gray-100">
-	<Header></Header>
 	<Hero></Hero>
 	<Statistics></Statistics>
 	<section className="py-8">

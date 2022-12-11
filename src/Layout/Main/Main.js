@@ -1,10 +1,13 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Template from '../../Pages/Template/Template';
+import Header from './../../Pages/Template/Header';
 
 const Main = () => {
     return (
         <div>
-            <Template></Template>
+            <Header></Header>
+            <Outlet></Outlet>
         </div>
     );
 };

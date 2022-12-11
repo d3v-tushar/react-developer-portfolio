@@ -29,11 +29,11 @@ const Contact = () => {
         </div>
 	<div className='grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32'>
     <div className="flex flex-col justify-between">
-		<div className="space-y-2">
+		{/* <div className="space-y-2">
 			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's talk!</h2>
 			<div className="dark:text-gray-400">Please fill this form to contact Me</div>
-		</div>
-		<img src="https://www.mambaui.com/assets/svg/doodle.svg" alt="" className="p-6 h-60 md:h-64" />
+		</div> */}
+		<img src="https://www.mambaui.com/assets/svg/doodle.svg" alt="" className="w-4/5" />
 	</div>
 	<form ref={form} onSubmit={sendEmail} novalidate="" className="space-y-6 ng-untouched ng-pristine ng-valid">
 		<div>
