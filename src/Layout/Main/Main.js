@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../../Pages/Template/Footer";
 import Header from "./../../Pages/Template/Header";
 import Particles from "react-tsparticles";
 
 const Main = () => {
+    const [darkMode, setDarkMode] = useState(true);
   const particlesInit = (main) => {
     console.log(main);
   };
@@ -12,8 +13,11 @@ const Main = () => {
     console.log(container);
   };
   return (
-    <div>
-      <Header></Header>
+    <div className={darkMode ? "dark" : "light"}>
+      <Header
+      darkMode={darkMode}
+      setDarkMode={setDarkMode}
+      ></Header>
       <Outlet></Outlet>
       <Footer></Footer>
       <Particles

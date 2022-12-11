@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({darkMode, setDarkMode}) => {
 	//const activeRoute = "flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-cyan-400 dark:border-cyan-400";
 	const NavLinkCSS = "flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
   	const active = "flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-cyan-400 dark:border-cyan-400";
@@ -24,6 +24,9 @@ const Header = () => {
 				</li>
 				<li className="flex">
 					<NavLink to='/contact' rel="noopener noreferrer"  className={({isActive}) => isActive ? active : NavLinkCSS}>Contact</NavLink>
+				</li>
+				<li>
+					<button onClick={() =>setDarkMode(!darkMode)} className='btn btn-primary'>Dark</button>
 				</li>
 			</ul>
 			<button className="flex justify-end p-4 md:hidden">
