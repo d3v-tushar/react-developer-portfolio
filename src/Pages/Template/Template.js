@@ -5,6 +5,7 @@ import Projects from './Projects';
 import Statistics from './Statistics';
 
 const Template = () => {
+	
     return (
         <div className="space-y-12 dark:bg-gray-800 dark:text-gray-100">
 	<Hero></Hero>
