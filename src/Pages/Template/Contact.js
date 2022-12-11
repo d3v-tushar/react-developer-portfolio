@@ -33,7 +33,7 @@ const Contact = () => {
 			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's talk!</h2>
 			<div className="dark:text-gray-400">Please fill this form to contact Me</div>
 		</div> */}
-		<img src="https://www.mambaui.com/assets/svg/doodle.svg" alt="" className="w-4/5" />
+		<img src="https://www.mambaui.com/assets/svg/doodle.svg" alt="" className="w-4/5 m-5" />
 	</div>
 	<form ref={form} onSubmit={sendEmail} novalidate="" className="space-y-6 ng-untouched ng-pristine ng-valid">
 		<div>
