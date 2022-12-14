@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = ({darkMode, setDarkMode}) => {
 	//const activeRoute = "flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-cyan-400 dark:border-cyan-400";
@@ -9,9 +9,9 @@ const Header = ({darkMode, setDarkMode}) => {
         <div className='dark:bg-gray-800 dark:text-gray-100'>
             <header className="p-4">
 		<div className="container flex justify-between h-16 mx-auto">
-			<a href='/' rel="noopener noreferrer"  aria-label="Back to homepage" className="flex items-center p-2">
+			<Link to='/' rel="noopener noreferrer"  aria-label="Back to homepage" className="flex items-center p-2">
 				<p className='text-2xl font-semibold'>Mohsin Ahmed</p>
-			</a>
+			</Link>
 			<ul className="items-stretch hidden space-x-3 md:flex">
 				<li className="flex">
 					<NavLink to='/about' rel="noopener noreferrer"  className={({isActive}) => isActive ? active : NavLinkCSS}>About</NavLink>

@@ -10,7 +10,7 @@ const Statistics = () => {
            
           </p>
         </div>
-		<div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3 my-8 border rounded-md">
+		<div className="container grid justify-center grid-cols-2 mx-auto text-center lg:grid-cols-3 my-8 border-4 border-black dark:border-yellow-400 rounded-md">
 			<div className="flex flex-col justify-start m-2 lg:m-6">
 				<p className="text-4xl font-bold leading-none lg:text-6xl">10+</p>
 				<p className="text-sm sm:text-base">Clients</p>

@@ -35,7 +35,7 @@ const Contact = () => {
 		</div> */}
 		<img src="https://www.mambaui.com/assets/svg/doodle.svg" alt="" className="w-4/5 m-5" />
 	</div>
-	<form ref={form} onSubmit={sendEmail} novalidate="" className="space-y-6 ng-untouched ng-pristine ng-valid">
+	<form ref={form} onSubmit={sendEmail} noValidate="" className="space-y-6 ng-untouched ng-pristine ng-valid">
 		<div>
 			<label htmlFor="name" className="text-lg font-semibold">Full name</label>
 			<input name="from_name" id="name" type="text" placeholder="" className="w-full p-3 rounded outline dark:bg-gray-800" />
